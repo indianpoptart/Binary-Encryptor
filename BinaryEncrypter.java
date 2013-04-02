@@ -18,7 +18,7 @@ public class BinaryEncrypter
         Scanner x = new Scanner(System.in);
         System.out.println("Enter a sentence");
         String y = x.nextLine();
-        System.out.println('\f');
+        
         Random rand = new Random();
 
         byte [] a = y.getBytes();
@@ -33,6 +33,7 @@ public class BinaryEncrypter
             }
             b.append(' ');
         }
+        System.out.println('\f');
         System.out.println("'" + y + "' to binary: " + b);
         try{
             Thread.sleep(6000);
